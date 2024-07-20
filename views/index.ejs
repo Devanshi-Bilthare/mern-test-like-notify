@@ -1,0 +1,15 @@
+<%- include('./partials/header')%>
+
+<div class="flex w-full p-10">
+  <%posts.forEach((post) =>{%>
+    <div class="w-[30%] p-2 h-[50vh] border-2">
+      <img src="<%= post.image%>" alt="post image" class="w-full h-[50%] object-cover">
+      <h2><%= post.title%></h2>
+      <p><%= post.desc%></p>
+      <a href="/like/<%=post._id%>">Like</a>
+      <p><%= post.likes.length%></p>
+    </div>
+  <%})%>
+</div>
+
+<%-include('./partials/footer')%>

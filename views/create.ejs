@@ -1,0 +1,10 @@
+<%- include('./partials/header')%>
+
+<form action="/create" method="post" class="w-[30%] p-5 bg-slate-400 m-auto">
+    <input type="text" name="title" placeholder="title" class="w-full p-2 mt-5">
+    <input type="text" name="desc" placeholder="desc" class="w-full p-2 mt-5">
+    <input type="url" name="image" placeholder="image" class="w-full p-2 mt-5">
+    <button class="w-full p-2 mt-5 bg-black text-white">create Post</button>
+</form>
+
+<%-include('./partials/footer')%>
